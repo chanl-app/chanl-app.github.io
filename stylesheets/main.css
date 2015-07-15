@@ -1,0 +1,22 @@
+/* line 1, ../sass/main.scss */
+body, html {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 7, ../sass/main.scss */
+header {
+  background-color: #FFF;
+}
+/* line 10, ../sass/main.scss */
+header .container {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+/* line 16, ../sass/main.scss */
+header img {
+  width: 300px;
+  margin-top: 40%;
+}
