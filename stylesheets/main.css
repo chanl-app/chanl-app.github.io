@@ -1,5 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700,300,600,400|Roboto:400,100italic,100,300italic,500);
-/* line 6, ../sass/_variables.scss */
+@font-face {
+  font-family: 'circula';
+  src: url("/fonts/custom/circula-medium.otf");
+  /* IE9 Compat Modes */
+}
+/* line 16, ../sass/_variables.scss */
 body, html {
   height: 100%;
   margin: 0px;
@@ -8,20 +13,25 @@ body, html {
   font-family: "Roboto", sans-serif;
 }
 
-/* line 14, ../sass/_variables.scss */
+/* line 24, ../sass/_variables.scss */
 a {
   text-decoration: none;
   color: #666;
 }
 
-/* line 20, ../sass/_variables.scss */
+/* line 30, ../sass/_variables.scss */
 ul li {
   list-style-type: none;
 }
 
-/* line 25, ../sass/_variables.scss */
+/* line 35, ../sass/_variables.scss */
 .clear {
   clear: both;
+}
+
+/* line 39, ../sass/_variables.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
 }
 
 /* line 3, ../sass/main.scss */
@@ -86,7 +96,7 @@ footer .container {
 }
 /* line 67, ../sass/main.scss */
 footer div.section {
-  width: 33.33333%;
+  width: 33.33333333%;
   float: left;
   text-align: left;
 }

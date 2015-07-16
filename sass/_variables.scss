@@ -1,7 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700,300,600,400|Roboto:400,100italic,100,300italic,500);
 
-$font-family2: 'Roboto', sans-serif;
+@font-face {
+  font-family: 'circula';
+  src: url('/fonts/custom/circula-medium.otf'); /* IE9 Compat Modes */
+  // src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  //      url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  //      url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+  //      url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+  //      url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 $font-family1: 'Open Sans', sans-serif;
+$font-family2: 'Roboto', sans-serif;
+$font-family3: 'circula', sans-serif;
 
 body, html {
 	height: 100%;
@@ -25,3 +35,8 @@ ul {
 .clear {
 	clear: both;
 }
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0px;
+}
+

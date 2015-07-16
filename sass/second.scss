@@ -1,0 +1,122 @@
+@import 'variables';
+
+body{
+	background: url('/images/checker.png');
+}
+
+nav{
+	padding: 20px 10%;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+
+
+	.title{
+		img{
+			width: 40px;
+			vertical-align: middle;
+		}
+
+		span{
+			vertical-align: middle;
+			color: #000;
+			margin-left: 10px;
+			font-size: 24px
+		}
+	}
+
+	ul{
+		display: block;
+		margin: 0px;
+		padding: 0px;
+
+		li{
+			display: inline-block;
+			a{
+				display: inline-block;
+				font-size: 18px;
+				padding: 18px 12px;
+				font-weight: 400;
+				color: rgba(0,0,0,0.4);
+				transition: color 0.5s ease;
+				-webkit-transition: color 0.5s ease;
+				-moz-transition: color 0.5s ease;
+				-o-transition: color 0.5s ease;
+
+				&:hover{
+					color: #000;
+				}
+			}
+		}
+
+		&.left{
+			float: left;
+		}
+
+		&.right{
+			float: right;
+		}
+	}
+}
+
+header{
+	height: 99%;
+
+	.container{
+		width:80%;
+		margin: auto;
+		text-align: center;
+		padding-top: 16%;
+	}
+
+	.img{
+		width: 100px;
+	}
+
+	.title{
+		font-size: 60px;
+		font-weight: 500;
+		font-family: $font-family3;
+		margin-top: -10px;
+	}
+
+	.sub-title{
+		font-size: 45px;
+		font-weight: 300;
+	}
+
+	.call-to-action{
+		display: inline-block;
+		margin-top: 30px;
+
+		button{
+			background-color: #1ABC9C;
+			padding: 10px 35px;
+			border-radius: 100px;
+			color: #FFF;
+			font-size: 21px;	
+		}
+	}
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 13px;
+	padding: 20px 0px;
+	border-bottom: 10px solid #333;
+
+	ul{
+		display: block;
+		li{
+			display: inline-block;
+			a{
+				display: inline-block;
+				padding-right: 14px;
+			}
+		}
+	}
+}
