@@ -1,20 +1,80 @@
-body, html{
-	width: 100%;
-	margin: 0px;
-	padding: 0px;
-}
+@import 'variables';
 
 header{
-	background-color: #FFF;
+	// background-color: #1ABC9C;
+	height: 99%;
 
 	.container{
-		width:30%;
+		width:20%;
 		margin: auto;
 		text-align: center;
+		padding-top: 12%;
 	}
 
-	img{
-		width: 300px;
-		margin-top: 40%;
+	.img{
+		width: 250px;
 	}
+
+	.title{
+		font-size: 45px;
+		font-weight: 400;
+		color: #333;
+		margin-top: -53px;
+
+		
+		animation-duration: 1s;
+		-webkit-animation-duration: 1s;
+		-moz-animation-duration: 1s;
+
+		animation-delay: 0.4s;
+		-webkit-animation-delay: 0.4s;
+		-moz-animation-delay: 0.4s;
+	}
+}
+
+footer{
+	background-color: #1ABC9C;
+	padding: 29px 0px;
+
+	ul{
+		list-style-type: none;
+		li{
+			a {
+				color: rgba(255,255,255,0.8);
+				display: block;
+				font-size: 17px;
+				padding: 1px;
+				font-weight: 400;
+				
+				&.title{
+					font-family: $font-family1;
+					font-size: 24px;
+					color: #FFF;
+					cursor: default;
+					margin-bottom: 6px;
+					font-weight: 500;
+				}
+
+			}
+		}
+	}
+
+	.container{
+		width: 70%;
+		margin: auto;
+	}
+
+	div.section{
+		width: (100%/3);
+		float: left;
+		text-align: left;
+	}
+}
+
+section.copyright{
+	background-color: #000;
+	color: #FFF;
+	text-align: center;
+	font-size: 11px;
+	padding: 8px 0px;
 }
