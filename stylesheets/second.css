@@ -114,23 +114,47 @@ header .img {
   width: 100px;
 }
 /* line 83, ../sass/second.scss */
+header .img-animate {
+  animation-duration: 1.2s;
+  -webkit-animation-duration: 1.2s;
+  -moz-animation-duration: 1.2s;
+  animation-delay: 1.3s;
+  -webkit-animation-delay: 1.3s;
+  -moz-animation-delay: 1.3s;
+}
+/* line 93, ../sass/second.scss */
 header .title {
   font-size: 60px;
   font-weight: 500;
   font-family: "circula", sans-serif;
   margin-top: -10px;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-delay: 1.4s;
+  -webkit-animation-delay: 1.4s;
+  -moz-animation-delay: 1.4s;
 }
-/* line 90, ../sass/second.scss */
+/* line 110, ../sass/second.scss */
+header .flipper {
+  animation-duration: 1.2s;
+  -webkit-animation-duration: 1.2s;
+  -moz-animation-duration: 1.2s;
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+}
+/* line 119, ../sass/second.scss */
 header .sub-title {
   font-size: 45px;
   font-weight: 300;
 }
-/* line 95, ../sass/second.scss */
+/* line 124, ../sass/second.scss */
 header .call-to-action {
   display: inline-block;
   margin-top: 30px;
 }
-/* line 99, ../sass/second.scss */
+/* line 128, ../sass/second.scss */
 header .call-to-action button {
   padding: 10px 35px;
   border-radius: 100px;
@@ -142,22 +166,22 @@ header .call-to-action button {
   -moz-transition: background-color 0.5s ease;
   -o-transition: background-color 0.5s ease;
 }
-/* line 110, ../sass/second.scss */
+/* line 139, ../sass/second.scss */
 header .call-to-action button:hover {
   background-color: #1ABC9C;
   color: #FFF;
 }
-/* line 116, ../sass/second.scss */
+/* line 145, ../sass/second.scss */
 header .call-to-action .stores p {
   font-size: 15px;
   margin: 12px 0px;
 }
-/* line 120, ../sass/second.scss */
+/* line 149, ../sass/second.scss */
 header .call-to-action .stores p b {
   font-weight: 500;
 }
 
-/* line 127, ../sass/second.scss */
+/* line 156, ../sass/second.scss */
 footer {
   position: absolute;
   bottom: 0;
@@ -168,16 +192,81 @@ footer {
   padding: 20px 0px;
   border-bottom: 10px solid #333;
 }
-/* line 137, ../sass/second.scss */
+/* line 166, ../sass/second.scss */
 footer ul {
   display: block;
 }
-/* line 139, ../sass/second.scss */
+/* line 168, ../sass/second.scss */
 footer ul li {
   display: inline-block;
 }
-/* line 141, ../sass/second.scss */
+/* line 170, ../sass/second.scss */
 footer ul li a {
   display: inline-block;
   padding-right: 14px;
+}
+
+/* line 178, ../sass/second.scss */
+#notifyMeModal {
+  background-color: rgba(1, 209, 168, 0.2);
+  padding-top: 9%;
+}
+/* line 182, ../sass/second.scss */
+#notifyMeModal .modal-content {
+  border-radius: 5px;
+  width: 70%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+/* line 188, ../sass/second.scss */
+#notifyMeModal .modal-content .close {
+  font-size: 30px;
+  display: inline-block;
+  padding: 6px 14px 0px;
+}
+/* line 194, ../sass/second.scss */
+#notifyMeModal .modal-content .info {
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0px;
+}
+/* line 199, ../sass/second.scss */
+#notifyMeModal .modal-content .info .top {
+  color: #00735C;
+  font-size: 28px;
+  font-weight: 500;
+}
+/* line 206, ../sass/second.scss */
+#notifyMeModal .modal-content .or {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+/* line 211, ../sass/second.scss */
+#notifyMeModal .modal-content .or:before {
+  content: " ";
+  widows: 20px;
+}
+/* line 217, ../sass/second.scss */
+#notifyMeModal .modal-content input[type='text'], #notifyMeModal .modal-content input[type='telephone'], #notifyMeModal .modal-content input[type='submit'], #notifyMeModal .modal-content button[type='submit'] {
+  font-size: 15px;
+  height: auto;
+  border-radius: 22px;
+  padding: 10px 20px;
+}
+/* line 225, ../sass/second.scss */
+#notifyMeModal .modal-content input[type='submit'], #notifyMeModal .modal-content button[type='submit'] {
+  width: 100%;
+  color: #FFF;
+  background-color: #00735C;
+  font-size: 21px;
+  transition: color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+}
+/* line 235, ../sass/second.scss */
+#notifyMeModal .modal-content input[type='submit']:hover, #notifyMeModal .modal-content button[type='submit']:hover {
+  background-color: #1ABC9C;
+  color: #FFF;
 }

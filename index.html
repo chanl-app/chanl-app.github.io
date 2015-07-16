@@ -4,8 +4,8 @@
 	<title>chanl</title>
 	<link rel="stylesheet" type='text/css' href="stylesheets/styles.css">
 	<link rel="stylesheet" type='text/css' href="stylesheets/second.css">
-	<!-- <link rel="stylesheet" href="stylesheets/main.css"> -->
 	<link rel="stylesheet" type='text/css' href="stylesheets/lib/animate.min.css">
+	<!-- <link rel="stylesheet" href="stylesheets/main.css"> -->
 </head>
 <body>
 	<nav>
@@ -23,17 +23,22 @@
 	<header>
 		<div class="container">
 			<div>
-				<div>
-					<img src="images/fresh_new_logo.png" alt="" class="img animated fadeInDown">
+				<div class="img-animate animated fadeInDown">
+					<img src="images/fresh_new_logo.png" alt="" class="img">
 				</div>
-				<!-- <img src="images/chanlv2.png" alt="" class="img animated fadeInDown"> -->
+				<!-- <img src="images/chanlv2.png" alt="" class="img fadeInDown"> -->
 				<!-- <img src="images/new_chanl_logo.png"> -->
 				<!-- <img src="images/new_logo_shadow.png"> -->
 				<div><h1 class="title animated fadeInRight">chanl</h1></div>
-				<div><h3 class="sub-title">Follow. Share. Capture. What Matters</h3></div>
+				<div class="flipper animated flipInX">
+					<h3 class="sub-title">
+						<div style="display: inline-block;">&nbsp;&nbsp;<span class='what-element' style="font-weight: 400;"></span></div>
+						What Matters
+					</h3>
+				</div>
 			</div>
 			<div class="call-to-action">
-				<button class="btn">Notify me on launch</button>
+				<button class="btn" id="notifyMe">Notify me on launch</button>
 				<div class="stores">
 					<p>Coming Soon on <b>Play Store</b> &amp; <b>App Store</b></p>
 				</div>
@@ -53,8 +58,63 @@
 			<div class="clear"></div>
 		</div>
 	</footer>
+	<!-- Button trigger modal --><!-- 
+	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+		Launch demo modal
+	</button> -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="notifyMeModal" tabindex="-1" role="dialog" aria-labelledby="notifyMeModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<div class="modal-body">
+					<div class="info">
+						<div class="top">
+							Get Notified on Launch day
+						</div>
+						<div>
+							We building an awesome product just for you. 
+							We don't have time to spam.
+						</div>
+					</div>
+					<div>
+						<input type="text" class="form-control" placeholder='Leave us your email'>
+						<div class="or">or</div>
+						<input type="telephone" class="form-control" placeholder='+1-20-624-2008'>
+						<p style="font-size: 12px; text-align: center; font-weight: 500;">We'll send as sms notification so you can be the first.</p>
+					</div>
+					<div class="">
+					<button type="submit" class="btn">Notify me on launch</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- <section class="copyright">
 		Copyright &copy; 2015. All rights reserved. chanlapp.com
-	</section>
---></body>
+	</section>-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="/javascripts/bootstrap.min.js"></script>
+	<script src="/javascripts/bootstrap/modal.js"></script>
+	<script type="text/javascript" src="javascripts/lib/typed.min.js"></script>
+	<script>
+		$(function(){
+			$("#notifyMe").on('click',function(){
+				$("#notifyMeModal").modal();
+			});
+		});
+
+		$(function(){
+			$(".what-element").typed({
+				strings: ["Follow", "Share", "Capture"],
+				typeSpeed: 200,
+				loop: true,
+				showCursor: false,
+				backDelay: 2500,
+				contentType: 'html'
+			});
+		});
+	</script>
+</body>
 </html>
