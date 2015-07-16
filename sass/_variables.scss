@@ -13,6 +13,18 @@ $font-family1: 'Open Sans', sans-serif;
 $font-family2: 'Roboto', sans-serif;
 $font-family3: 'circula', sans-serif;
 
+$blue-black: #334D5C;
+$yellow: #FFC600;
+$lighter-yellow: #EFC849;
+$dark-yellow: #F39C12;
+$light-grey: #EAEAEA;
+$red: #AF2222;
+$purple: #B589B0;
+$grey: #D0D7D8;
+$dark: #343434;
+$lighter-green: #1ABC9C;
+$darker-green: #00735C;
+
 body, html {
 	height: 100%;
 	margin: 0px;
@@ -22,8 +34,12 @@ body, html {
 }
 
 a {
-	text-decoration: none;
 	color: #666;
+
+	&:hover{
+		text-decoration: none;
+
+	}
 }
 
 ul {

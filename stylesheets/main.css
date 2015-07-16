@@ -4,7 +4,7 @@
   src: url("/fonts/custom/circula-medium.otf");
   /* IE9 Compat Modes */
 }
-/* line 16, ../sass/_variables.scss */
+/* line 28, ../sass/_variables.scss */
 body, html {
   height: 100%;
   margin: 0px;
@@ -13,23 +13,26 @@ body, html {
   font-family: "Roboto", sans-serif;
 }
 
-/* line 24, ../sass/_variables.scss */
+/* line 36, ../sass/_variables.scss */
 a {
-  text-decoration: none;
   color: #666;
 }
+/* line 39, ../sass/_variables.scss */
+a:hover {
+  text-decoration: none;
+}
 
-/* line 30, ../sass/_variables.scss */
+/* line 46, ../sass/_variables.scss */
 ul li {
   list-style-type: none;
 }
 
-/* line 35, ../sass/_variables.scss */
+/* line 51, ../sass/_variables.scss */
 .clear {
   clear: both;
 }
 
-/* line 39, ../sass/_variables.scss */
+/* line 55, ../sass/_variables.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0px;
 }

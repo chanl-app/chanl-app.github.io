@@ -4,7 +4,7 @@
   src: url("/fonts/custom/circula-medium.otf");
   /* IE9 Compat Modes */
 }
-/* line 16, ../sass/_variables.scss */
+/* line 28, ../sass/_variables.scss */
 body, html {
   height: 100%;
   margin: 0px;
@@ -13,23 +13,26 @@ body, html {
   font-family: "Roboto", sans-serif;
 }
 
-/* line 24, ../sass/_variables.scss */
+/* line 36, ../sass/_variables.scss */
 a {
-  text-decoration: none;
   color: #666;
 }
+/* line 39, ../sass/_variables.scss */
+a:hover {
+  text-decoration: none;
+}
 
-/* line 30, ../sass/_variables.scss */
+/* line 46, ../sass/_variables.scss */
 ul li {
   list-style-type: none;
 }
 
-/* line 35, ../sass/_variables.scss */
+/* line 51, ../sass/_variables.scss */
 .clear {
   clear: both;
 }
 
-/* line 39, ../sass/_variables.scss */
+/* line 55, ../sass/_variables.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0px;
 }
@@ -45,30 +48,37 @@ nav {
   position: absolute;
   left: 0px;
   right: 0px;
+  background-image: url("/images/patch_background2.png");
+  background-repeat: repeat-x;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
 }
-/* line 15, ../sass/second.scss */
+/* line 22, ../sass/second.scss */
 nav .title img {
   width: 40px;
   vertical-align: middle;
 }
-/* line 20, ../sass/second.scss */
+/* line 27, ../sass/second.scss */
 nav .title span {
   vertical-align: middle;
   color: #000;
   margin-left: 10px;
   font-size: 24px;
 }
-/* line 28, ../sass/second.scss */
+/* line 35, ../sass/second.scss */
 nav ul {
   display: block;
   margin: 0px;
   padding: 0px;
 }
-/* line 33, ../sass/second.scss */
+/* line 40, ../sass/second.scss */
 nav ul li {
   display: inline-block;
 }
-/* line 35, ../sass/second.scss */
+/* line 42, ../sass/second.scss */
 nav ul li a {
   display: inline-block;
   font-size: 18px;
@@ -80,61 +90,70 @@ nav ul li a {
   -moz-transition: color 0.5s ease;
   -o-transition: color 0.5s ease;
 }
-/* line 46, ../sass/second.scss */
+/* line 53, ../sass/second.scss */
 nav ul li a:hover {
   color: #000;
 }
-/* line 52, ../sass/second.scss */
+/* line 59, ../sass/second.scss */
 nav ul.left {
   float: left;
 }
-/* line 56, ../sass/second.scss */
+/* line 63, ../sass/second.scss */
 nav ul.right {
   float: right;
 }
 
-/* line 62, ../sass/second.scss */
+/* line 69, ../sass/second.scss */
 header {
   height: 99%;
 }
-/* line 65, ../sass/second.scss */
+/* line 72, ../sass/second.scss */
 header .container {
   width: 80%;
   margin: auto;
   text-align: center;
   padding-top: 16%;
 }
-/* line 72, ../sass/second.scss */
+/* line 79, ../sass/second.scss */
 header .img {
   width: 100px;
 }
-/* line 76, ../sass/second.scss */
+/* line 83, ../sass/second.scss */
 header .title {
   font-size: 60px;
   font-weight: 500;
   font-family: "circula", sans-serif;
   margin-top: -10px;
 }
-/* line 83, ../sass/second.scss */
+/* line 90, ../sass/second.scss */
 header .sub-title {
   font-size: 45px;
   font-weight: 300;
 }
-/* line 88, ../sass/second.scss */
+/* line 95, ../sass/second.scss */
 header .call-to-action {
   display: inline-block;
   margin-top: 30px;
 }
-/* line 92, ../sass/second.scss */
+/* line 99, ../sass/second.scss */
 header .call-to-action button {
-  background-color: #1ABC9C;
   padding: 10px 35px;
   border-radius: 100px;
   color: #FFF;
+  background-color: #00735C;
   font-size: 21px;
+  transition: color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+}
+/* line 110, ../sass/second.scss */
+header .call-to-action button:hover {
+  background-color: #1ABC9C;
+  color: #FFF;
 }
 
-/* line 106, ../sass/second.scss */
+/* line 118, ../sass/second.scss */
 footer {
   position: absolute;
   bottom: 0;
@@ -145,15 +164,15 @@ footer {
   padding: 20px 0px;
   border-bottom: 10px solid #333;
 }
-/* line 116, ../sass/second.scss */
+/* line 128, ../sass/second.scss */
 footer ul {
   display: block;
 }
-/* line 118, ../sass/second.scss */
+/* line 130, ../sass/second.scss */
 footer ul li {
   display: inline-block;
 }
-/* line 120, ../sass/second.scss */
+/* line 132, ../sass/second.scss */
 footer ul li a {
   display: inline-block;
   padding-right: 14px;
