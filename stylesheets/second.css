@@ -134,7 +134,7 @@ header .call-to-action button {
   font-size: 21px;
 }
 
-/* line 102, ../sass/second.scss */
+/* line 106, ../sass/second.scss */
 footer {
   position: absolute;
   bottom: 0;
@@ -145,15 +145,15 @@ footer {
   padding: 20px 0px;
   border-bottom: 10px solid #333;
 }
-/* line 112, ../sass/second.scss */
+/* line 116, ../sass/second.scss */
 footer ul {
   display: block;
 }
-/* line 114, ../sass/second.scss */
+/* line 118, ../sass/second.scss */
 footer ul li {
   display: inline-block;
 }
-/* line 116, ../sass/second.scss */
+/* line 120, ../sass/second.scss */
 footer ul li a {
   display: inline-block;
   padding-right: 14px;
