@@ -20,6 +20,7 @@ a {
 /* line 39, ../sass/_variables.scss */
 a:hover {
   text-decoration: none;
+  color: #1ABC9C;
 }
 
 /* line 46, ../sass/_variables.scss */
