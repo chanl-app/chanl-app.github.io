@@ -22,6 +22,7 @@ nav{
 		img{
 			width: 40px;
 			vertical-align: middle;
+			
 		}
 
 		span{
@@ -74,10 +75,37 @@ header{
 		margin: auto;
 		text-align: center;
 		padding-top: 16%;
+		
+		@include handhelds {
+			width: 100%;
+			// padding-top: 40%;
+		}
+
+		@include medium-screens {
+			width: 100%;
+			padding-top: 40%;
+		}
+
+		@include wide-screens {
+			float: none;
+		}
 	}
 
 	.img{
 		width: 100px;
+
+		@include handhelds {
+			// width: 280px;
+			// padding-top: 40%;
+		}
+
+		@include medium-screens {
+			width: 280px;
+		}
+
+		@include wide-screens {
+			float: none;
+		}
 	}
 
 	.img-animate{
@@ -96,7 +124,7 @@ header{
 		font-family: $font-family3;
 		margin-top: -10px;
 
-		
+
 		animation-duration: 1s;
 		-webkit-animation-duration: 1s;
 		-moz-animation-duration: 1s;
@@ -104,6 +132,18 @@ header{
 		animation-delay: 1.4s;
 		-webkit-animation-delay: 1.4s;
 		-moz-animation-delay: 1.4s;
+
+		@include handhelds {
+			// font-size: 200px;
+		}
+
+		@include medium-screens {
+			font-size: 200px;
+		}
+
+		@include wide-screens {
+			// float: none;
+		}
 	}
 
 
@@ -116,9 +156,22 @@ header{
 		-webkit-animation-delay: 2s;
 		-moz-animation-delay: 2s;
 	}
+
 	.sub-title{
 		font-size: 45px;
 		font-weight: 300;
+
+		@include handhelds {
+			// font-size: 200px;
+		}
+
+		@include medium-screens {
+			font-size: 90px;
+		}
+
+		@include wide-screens {
+			// float: none;
+		}		
 	}
 
 	.call-to-action{
@@ -140,6 +193,19 @@ header{
 				background-color: $lighter-green;
 				color: #FFF;
 			}
+
+			@include handhelds {
+				// font-size: 200px;
+			}
+
+			@include medium-screens {
+				font-size: 60px;
+				padding: 30px 60px;
+			}
+
+			@include wide-screens {
+				// float: none;
+			}
 		}
 
 		.stores p {
@@ -148,6 +214,19 @@ header{
 
 			b{
 				font-weight: 500;
+			}
+
+			@include handhelds {
+				// font-size: 200px;
+			}
+
+			@include medium-screens {
+				font-size: 40px;
+				margin-top: 70px;
+			}
+
+			@include wide-screens {
+				// float: none;
 			}
 		}
 	}
