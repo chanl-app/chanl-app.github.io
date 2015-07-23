@@ -4,32 +4,56 @@ body{
 	background: url('/images/checker.png');
 }
 
+.navbar-default{
+	@include wide-screens {
+		background-color: transparent;
+		border-color: transparent;
+	}
+
+	@include handhelds {
+		padding: 0px;
+	}
+
+	@include medium-screens {
+		padding: 0px;
+	}
+}
+
 nav{
-	padding: 20px 10%;
+	padding: 14px 0%;
 	position: absolute;
 	left: 0px;
 	right: 0px;
-	background-image: url('/images/patch_background2.png');
-	background-repeat: repeat-x;
-	// -webkit-transform: rotate(30deg);
-	// -moz-transform: rotate(30deg);
-	// -ms-transform: rotate(30deg);
-	// -o-transform: rotate(30deg);
-	// transform: rotate(30deg);
-
 
 	.title{
 		img{
 			width: 40px;
 			vertical-align: middle;
+			display: inline-block;
 			
+			@include handhelds {
+				width: 30px;
+			}
+
+			@include medium-screens {
+				display: inline-block;
+				width: 30px;
+			}
 		}
 
 		span{
 			vertical-align: middle;
 			color: #000;
 			margin-left: 10px;
-			font-size: 24px
+			font-size: 24px;
+
+			@include handhelds {
+				font-size: 20px;
+			}
+
+			@include medium-screens {
+				font-size: 20px;
+			}				
 		}
 	}
 
@@ -45,14 +69,15 @@ nav{
 				font-size: 18px;
 				padding: 18px 12px;
 				font-weight: 400;
-				color: rgba(0,0,0,0.4);
+				color: #888888 !important;
 				transition: color 0.5s ease;
 				-webkit-transition: color 0.5s ease;
 				-moz-transition: color 0.5s ease;
 				-o-transition: color 0.5s ease;
 
 				&:hover{
-					color: #000;
+					color: #000 !important;
+					background-color: transparent !important;
 				}
 			}
 		}
@@ -70,20 +95,20 @@ nav{
 header{
 	height: 99%;
 
-	.container{
+	.holder{
 		width:80%;
 		margin: auto;
 		text-align: center;
-		padding-top: 16%;
+		padding-top: 12%;
 		
 		@include handhelds {
 			width: 100%;
-			// padding-top: 40%;
+			padding-top: 35%;
 		}
 
 		@include medium-screens {
 			width: 100%;
-			padding-top: 40%;
+			padding-top: 35%;
 		}
 
 		@include wide-screens {
@@ -96,11 +121,10 @@ header{
 
 		@include handhelds {
 			// width: 280px;
-			// padding-top: 40%;
 		}
 
 		@include medium-screens {
-			width: 280px;
+			// width: 280px;
 		}
 
 		@include wide-screens {
@@ -138,7 +162,7 @@ header{
 		}
 
 		@include medium-screens {
-			font-size: 200px;
+			// font-size: 200px;
 		}
 
 		@include wide-screens {
@@ -162,11 +186,11 @@ header{
 		font-weight: 300;
 
 		@include handhelds {
-			// font-size: 200px;
+			font-size: 30px;
 		}
 
 		@include medium-screens {
-			font-size: 90px;
+			font-size: 30px;
 		}
 
 		@include wide-screens {
@@ -199,8 +223,8 @@ header{
 			}
 
 			@include medium-screens {
-				font-size: 60px;
-				padding: 30px 60px;
+				// font-size: 60px;
+				// padding: 30px 60px;
 			}
 
 			@include wide-screens {
@@ -210,7 +234,7 @@ header{
 
 		.stores p {
 			font-size: 15px;
-			margin: 12px 0px;
+			margin-top: 35px;
 
 			b{
 				font-weight: 500;
@@ -221,8 +245,7 @@ header{
 			}
 
 			@include medium-screens {
-				font-size: 40px;
-				margin-top: 70px;
+				// font-size: 40px;
 			}
 
 			@include wide-screens {
@@ -249,6 +272,7 @@ footer{
 			a{
 				display: inline-block;
 				padding-right: 14px;
+				text-align: center;
 			}
 		}
 	}

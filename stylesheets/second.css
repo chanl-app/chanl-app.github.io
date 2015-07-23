@@ -43,109 +43,149 @@ body {
   background: url("/images/checker.png");
 }
 
-/* line 7, ../sass/second.scss */
+@media only screen and (min-width: 1024px) {
+  /* line 7, ../sass/second.scss */
+  .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 7, ../sass/second.scss */
+  .navbar-default {
+    padding: 0px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  /* line 7, ../sass/second.scss */
+  .navbar-default {
+    padding: 0px;
+  }
+}
+
+/* line 22, ../sass/second.scss */
 nav {
-  padding: 20px 10%;
+  padding: 14px 0%;
   position: absolute;
   left: 0px;
   right: 0px;
-  background-image: url("/images/patch_background2.png");
-  background-repeat: repeat-x;
 }
-/* line 22, ../sass/second.scss */
+/* line 29, ../sass/second.scss */
 nav .title img {
   width: 40px;
   vertical-align: middle;
+  display: inline-block;
 }
-/* line 28, ../sass/second.scss */
+@media only screen and (max-width: 320px) {
+  /* line 29, ../sass/second.scss */
+  nav .title img {
+    width: 30px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  /* line 29, ../sass/second.scss */
+  nav .title img {
+    display: inline-block;
+    width: 30px;
+  }
+}
+/* line 44, ../sass/second.scss */
 nav .title span {
   vertical-align: middle;
   color: #000;
   margin-left: 10px;
   font-size: 24px;
 }
-/* line 36, ../sass/second.scss */
+@media only screen and (max-width: 320px) {
+  /* line 44, ../sass/second.scss */
+  nav .title span {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  /* line 44, ../sass/second.scss */
+  nav .title span {
+    font-size: 20px;
+  }
+}
+/* line 60, ../sass/second.scss */
 nav ul {
   display: block;
   margin: 0px;
   padding: 0px;
 }
-/* line 41, ../sass/second.scss */
+/* line 65, ../sass/second.scss */
 nav ul li {
   display: inline-block;
 }
-/* line 43, ../sass/second.scss */
+/* line 67, ../sass/second.scss */
 nav ul li a {
   display: inline-block;
   font-size: 18px;
   padding: 18px 12px;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.4);
+  color: #888888 !important;
   transition: color 0.5s ease;
   -webkit-transition: color 0.5s ease;
   -moz-transition: color 0.5s ease;
   -o-transition: color 0.5s ease;
 }
-/* line 54, ../sass/second.scss */
+/* line 78, ../sass/second.scss */
 nav ul li a:hover {
-  color: #000;
+  color: #000 !important;
+  background-color: transparent !important;
 }
-/* line 60, ../sass/second.scss */
+/* line 85, ../sass/second.scss */
 nav ul.left {
   float: left;
 }
-/* line 64, ../sass/second.scss */
+/* line 89, ../sass/second.scss */
 nav ul.right {
   float: right;
 }
 
-/* line 70, ../sass/second.scss */
+/* line 95, ../sass/second.scss */
 header {
   height: 99%;
 }
-/* line 73, ../sass/second.scss */
-header .container {
+/* line 98, ../sass/second.scss */
+header .holder {
   width: 80%;
   margin: auto;
   text-align: center;
-  padding-top: 16%;
+  padding-top: 12%;
 }
 @media only screen and (max-width: 320px) {
-  /* line 73, ../sass/second.scss */
-  header .container {
+  /* line 98, ../sass/second.scss */
+  header .holder {
     width: 100%;
+    padding-top: 35%;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 1023px) {
-  /* line 73, ../sass/second.scss */
-  header .container {
+  /* line 98, ../sass/second.scss */
+  header .holder {
     width: 100%;
-    padding-top: 40%;
+    padding-top: 35%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 73, ../sass/second.scss */
-  header .container {
+  /* line 98, ../sass/second.scss */
+  header .holder {
     float: none;
   }
 }
-/* line 94, ../sass/second.scss */
+/* line 119, ../sass/second.scss */
 header .img {
   width: 100px;
 }
-@media only screen and (min-width: 321px) and (max-width: 1023px) {
-  /* line 94, ../sass/second.scss */
-  header .img {
-    width: 280px;
-  }
-}
 @media only screen and (min-width: 1024px) {
-  /* line 94, ../sass/second.scss */
+  /* line 119, ../sass/second.scss */
   header .img {
     float: none;
   }
 }
-/* line 111, ../sass/second.scss */
+/* line 135, ../sass/second.scss */
 header .img-animate {
   animation-duration: 1.2s;
   -webkit-animation-duration: 1.2s;
@@ -154,7 +194,7 @@ header .img-animate {
   -webkit-animation-delay: 1.3s;
   -moz-animation-delay: 1.3s;
 }
-/* line 121, ../sass/second.scss */
+/* line 145, ../sass/second.scss */
 header .title {
   font-size: 60px;
   font-weight: 500;
@@ -167,13 +207,7 @@ header .title {
   -webkit-animation-delay: 1.4s;
   -moz-animation-delay: 1.4s;
 }
-@media only screen and (min-width: 321px) and (max-width: 1023px) {
-  /* line 121, ../sass/second.scss */
-  header .title {
-    font-size: 200px;
-  }
-}
-/* line 150, ../sass/second.scss */
+/* line 174, ../sass/second.scss */
 header .flipper {
   animation-duration: 1.2s;
   -webkit-animation-duration: 1.2s;
@@ -182,23 +216,29 @@ header .flipper {
   -webkit-animation-delay: 2s;
   -moz-animation-delay: 2s;
 }
-/* line 160, ../sass/second.scss */
+/* line 184, ../sass/second.scss */
 header .sub-title {
   font-size: 45px;
   font-weight: 300;
 }
-@media only screen and (min-width: 321px) and (max-width: 1023px) {
-  /* line 160, ../sass/second.scss */
+@media only screen and (max-width: 320px) {
+  /* line 184, ../sass/second.scss */
   header .sub-title {
-    font-size: 90px;
+    font-size: 30px;
   }
 }
-/* line 177, ../sass/second.scss */
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  /* line 184, ../sass/second.scss */
+  header .sub-title {
+    font-size: 30px;
+  }
+}
+/* line 201, ../sass/second.scss */
 header .call-to-action {
   display: inline-block;
   margin-top: 30px;
 }
-/* line 181, ../sass/second.scss */
+/* line 205, ../sass/second.scss */
 header .call-to-action button {
   padding: 10px 35px;
   border-radius: 100px;
@@ -210,36 +250,22 @@ header .call-to-action button {
   -moz-transition: background-color 0.5s ease;
   -o-transition: background-color 0.5s ease;
 }
-/* line 192, ../sass/second.scss */
+/* line 216, ../sass/second.scss */
 header .call-to-action button:hover {
   background-color: #1ABC9C;
   color: #FFF;
 }
-@media only screen and (min-width: 321px) and (max-width: 1023px) {
-  /* line 181, ../sass/second.scss */
-  header .call-to-action button {
-    font-size: 60px;
-    padding: 30px 60px;
-  }
-}
-/* line 211, ../sass/second.scss */
+/* line 235, ../sass/second.scss */
 header .call-to-action .stores p {
   font-size: 15px;
-  margin: 12px 0px;
+  margin-top: 35px;
 }
-/* line 215, ../sass/second.scss */
+/* line 239, ../sass/second.scss */
 header .call-to-action .stores p b {
   font-weight: 500;
 }
-@media only screen and (min-width: 321px) and (max-width: 1023px) {
-  /* line 211, ../sass/second.scss */
-  header .call-to-action .stores p {
-    font-size: 40px;
-    margin-top: 70px;
-  }
-}
 
-/* line 235, ../sass/second.scss */
+/* line 258, ../sass/second.scss */
 footer {
   position: absolute;
   bottom: 0;
@@ -250,69 +276,70 @@ footer {
   padding: 20px 0px;
   border-bottom: 10px solid #333;
 }
-/* line 245, ../sass/second.scss */
+/* line 268, ../sass/second.scss */
 footer ul {
   display: block;
 }
-/* line 247, ../sass/second.scss */
+/* line 270, ../sass/second.scss */
 footer ul li {
   display: inline-block;
 }
-/* line 249, ../sass/second.scss */
+/* line 272, ../sass/second.scss */
 footer ul li a {
   display: inline-block;
   padding-right: 14px;
+  text-align: center;
 }
 
-/* line 257, ../sass/second.scss */
+/* line 281, ../sass/second.scss */
 #notifyMeModal {
   background-color: rgba(1, 209, 168, 0.2);
   padding-top: 9%;
 }
-/* line 261, ../sass/second.scss */
+/* line 285, ../sass/second.scss */
 #notifyMeModal .modal-content {
   border-radius: 5px;
   width: 70%;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.9);
 }
-/* line 267, ../sass/second.scss */
+/* line 291, ../sass/second.scss */
 #notifyMeModal .modal-content .close {
   font-size: 30px;
   display: inline-block;
   padding: 6px 14px 0px;
 }
-/* line 273, ../sass/second.scss */
+/* line 297, ../sass/second.scss */
 #notifyMeModal .modal-content .info {
   font-size: 18px;
   text-align: center;
   margin: 20px 0px;
 }
-/* line 278, ../sass/second.scss */
+/* line 302, ../sass/second.scss */
 #notifyMeModal .modal-content .info .top {
   color: #00735C;
   font-size: 28px;
   font-weight: 500;
 }
-/* line 285, ../sass/second.scss */
+/* line 309, ../sass/second.scss */
 #notifyMeModal .modal-content .or {
   font-size: 20px;
   font-weight: 500;
   text-align: center;
 }
-/* line 290, ../sass/second.scss */
+/* line 314, ../sass/second.scss */
 #notifyMeModal .modal-content .or:before {
   content: " ";
   widows: 20px;
 }
-/* line 296, ../sass/second.scss */
+/* line 320, ../sass/second.scss */
 #notifyMeModal .modal-content input[type='text'], #notifyMeModal .modal-content input[type='telephone'], #notifyMeModal .modal-content input[type='submit'], #notifyMeModal .modal-content button[type='submit'] {
   font-size: 15px;
   height: auto;
   border-radius: 22px;
   padding: 10px 20px;
 }
-/* line 304, ../sass/second.scss */
+/* line 328, ../sass/second.scss */
 #notifyMeModal .modal-content input[type='submit'], #notifyMeModal .modal-content button[type='submit'] {
   width: 100%;
   color: #FFF;
@@ -323,7 +350,7 @@ footer ul li a {
   -moz-transition: background-color 0.5s ease;
   -o-transition: background-color 0.5s ease;
 }
-/* line 314, ../sass/second.scss */
+/* line 338, ../sass/second.scss */
 #notifyMeModal .modal-content input[type='submit']:hover, #notifyMeModal .modal-content button[type='submit']:hover {
   background-color: #1ABC9C;
   color: #FFF;
