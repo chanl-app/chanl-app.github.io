@@ -282,11 +282,25 @@ footer{
 	background-color: rgba(1, 209, 168, 0.2);
 	padding-top: 9%;
 
-	.modal-content{
+	.modal-dialog{
 		border-radius: 5px;
-		width: 70%;
-		margin: auto;
+		width: 30%;
 		background-color: rgba(255,255,255,0.9);
+		border-radius: 6px;
+		box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+		
+		// .close{
+		// 	font-size: 30px;
+		// 	display: inline-block;
+		// 	padding: 6px 14px 0px;
+		// }
+	}
+	
+	.modal-content{
+		// border-radius: 5px;
+		// width: 70%;
+		margin: auto;
+		border-radius: 0px;
 
 		.thankYouNotification{
 			text-align: center;
@@ -305,18 +319,13 @@ footer{
 				display: block;
 				margin-top: 20px;
 				margin-bottom: 10px;
-				
+
 				i{
 					display: inline-block;
 				}
 			}
 		}
 
-		.close{
-			font-size: 30px;
-			display: inline-block;
-			padding: 6px 14px 0px;
-		}
 
 		.info{
 			font-size: 18px;

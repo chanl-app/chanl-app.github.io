@@ -67,10 +67,10 @@
 		<div class="container">
 			<div class="section">
 				<ul>
-					<li><a href="">Overview and FAQ</a></li>
+					<!-- <li><a href="">Overview and FAQ</a></li>
 					<li><a href=""></a></li>
 					<li><a href="">Terms and conditions</a></li>
-					<li><a href="">Privacy and Conditions</a></li>
+					<li><a href="">Privacy and Conditions</a></li> -->
 				</ul>
 			</div>
 			<div class="clear"></div>
@@ -94,10 +94,12 @@
 	</script>
 	<!-- Modals -->
 	<!-- Notify me modal -->
-	<div class="modal fade" id="notifyMeModal" tabindex="-1" role="dialog" aria-labelledby="notifyMeModalLabel">
+	<div class="modal fade notifyMeModal" id="notifyMeModal" tabindex="-1" role="dialog" aria-labelledby="notifyMeModalLabel">
 		<div class="modal-dialog" role="document">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>				
+			</div>
 			<div class="modal-content">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				<div class="modal-body">
 					<div class="info">
 						<div class="top">
@@ -108,10 +110,10 @@
 						</div>
 					</div>
 					<!-- 
-					action="https://docs.google.com/forms/d/1FDCS0ZdPyydWNlYaL95hGEkS_9AWxJdJ4muoaR1Y7uU/formResponse" 
+					 
 				-->
 				<iframe name="hidden_iframe" id="hidden_iframe"	style="display:none;" onload="thanYouModal()"></iframe>
-				<form method="POST" target="hidden_iframe" onsubmit="submitted=true;" id="notifyForm">
+				<form action="https://docs.google.com/forms/d/1FDCS0ZdPyydWNlYaL95hGEkS_9AWxJdJ4muoaR1Y7uU/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;" id="notifyForm">
 					<div>
 
 						<div>
@@ -157,8 +159,10 @@
 	<!-- Thank you modal -->
 	<div class="modal fade" id="thankYouModal" tabindex="-1" role="dialog" aria-labelledby="notifyMeModalLabel">
 		<div class="modal-dialog" role="document">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>				
+			</div>
 			<div class="modal-content">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				<div class="modal-body">
 					<div class="info">
 						<div class="top">
@@ -173,8 +177,6 @@
 						<h2>In the meantime, catch us on social media</h2>
 						<div class="social">
 							<!-- <i>facebook</i> -->
-							<!-- I just signed up for Douple: double dates for couples! http://www.douple.co via @doupleco -->
-							
 							<a href="https://twitter.com/share" class="twitter-share-button" data-text="Just signed up on Chanl: a communication tool used by individuals to get  information to others." data-via="ChanlApp" data-size="large" data-count="none">Tweet</a>
 							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
