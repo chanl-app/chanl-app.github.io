@@ -282,6 +282,11 @@ footer{
 	background-color: rgba(1, 209, 168, 0.2);
 	padding-top: 9%;
 
+	.modal-header{
+		// background-color: #FFF;
+		border: none;
+	}
+
 	.modal-dialog{
 		border-radius: 5px;
 		width: 30%;
@@ -312,6 +317,9 @@ footer{
 		// width: 70%;
 		margin: auto;
 		border-radius: 0px;
+		box-shadow: none;
+		border: none;
+		background-color: transparent;
 
 		.thankYouNotification{
 			text-align: center;
