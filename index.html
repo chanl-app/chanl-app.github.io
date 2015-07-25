@@ -81,8 +81,81 @@
 		Launch demo modal
 	</button> -->
 
-	<!-- Modal -->
+	<script type="text/javascript">
+		var submitted=false;
+		var thanYouModal = function(){
+			if (submitted){
+				$('#notifyMeModal').modal("toggle");
+				$('#thankYouModal').modal("toggle");
+
+				$("#notifyForm")[0].reset(); // reset inputs
+			}
+		}
+	</script>
+	<!-- Modals -->
+	<!-- Notify me modal -->
 	<div class="modal fade" id="notifyMeModal" tabindex="-1" role="dialog" aria-labelledby="notifyMeModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<div class="modal-body">
+					<div class="info">
+						<div class="top">
+							Be Part of our Private Beta
+						</div>
+						<div>
+							We building an awesome product just for you.
+						</div>
+					</div>
+					<!-- 
+					action="https://docs.google.com/forms/d/1FDCS0ZdPyydWNlYaL95hGEkS_9AWxJdJ4muoaR1Y7uU/formResponse" 
+				-->
+				<iframe name="hidden_iframe" id="hidden_iframe"	style="display:none;" onload="thanYouModal()"></iframe>
+				<form method="POST" target="hidden_iframe" onsubmit="submitted=true;" id="notifyForm">
+					<div>
+
+						<div>
+							<div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+								<input type="email" name="entry.1361909972" value="" class="form-control" id="entry_1361909972" dir="auto" aria-label="Email  Must be a valid email address" aria-required="true" required="" title="Must be a valid email address" placeholder="Leave us your email">
+
+										<!-- <div class="error-message" id="581059875_errorMessage">Must be a valid email address</div>
+										<div class="required-message">This is a required question</div> -->
+									</div>
+								</div>
+							</div> 
+							<div class="or">or</div>
+							<div>
+								<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+
+									<input type="text" name="entry.1969853625" value="" class="form-control" id="entry_1969853625" dir="auto" aria-label="Phone number  Must contain " pattern=".*.*" title="Must contain " placeholder="+1-20-624-2008">
+
+										<!-- <div class="error-message" id="1130416811_errorMessage">Must contain </div>
+										<div class="required-message">This is a required question</div> -->
+									</div>
+								</div>
+							</div>
+							<p style="font-size: 12px; text-align: center; font-weight: 500;">
+								We'll send an sms notification so you can be the first on chanl.
+							</p>
+
+							<input type="hidden" name="draftResponse" value="[,,&quot;4377805801153691101&quot;]
+							">
+							<input type="hidden" name="pageHistory" value="0">
+
+
+							<input type="hidden" name="fbzx" value="4377805801153691101">
+						</div>
+						<div class="ss-item ss-navigate">
+							<input type="submit" name="submit" value="Join Now" id="ss-submit" class="btn">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /notify me modal -->
+	<!-- Thank you modal -->
+	<div class="modal fade" id="thankYouModal" tabindex="-1" role="dialog" aria-labelledby="notifyMeModalLabel">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -93,22 +166,28 @@
 						</div>
 						<div>
 							We building an awesome product just for you. 
-							We don't have time to spam.
 						</div>
 					</div>
-					<div>
-						<input type="text" class="form-control" placeholder='Leave us your email'>
-						<div class="or">or</div>
-						<input type="telephone" class="form-control" placeholder='+1-20-624-2008'>
-						<p style="font-size: 12px; text-align: center; font-weight: 500;">We'll send as sms notification so you can be the first.</p>
-					</div>
-					<div class="">
-						<button type="submit" class="btn">Notify me on launch</button>
+					<div class="thankYouNotification">
+						<h1>Thank you for signing up.</h1>
+						<h2>In the meantime, catch us on social media</h2>
+						<div class="social">
+							<!-- <i>facebook</i> -->
+							<!-- I just signed up for Douple: double dates for couples! http://www.douple.co via @doupleco -->
+							
+							<a href="https://twitter.com/share" class="twitter-share-button" data-text="Just signed up on Chanl: a communication tool used by individuals to get  information to others." data-via="ChanlApp" data-size="large" data-count="none">Tweet</a>
+							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+							<a href="https://twitter.com/ChanlApp" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @ChanlApp</a>
+							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- /than you modal -->
+	<!-- /modals -->
 	<!-- <section class="copyright">
 		Copyright &copy; 2015. All rights reserved. chanlapp.com
 	</section>-->
