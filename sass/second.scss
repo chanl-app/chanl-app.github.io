@@ -4,6 +4,10 @@ body{
 	background: url('/images/checker.png');
 }
 
+html{
+	border-bottom: solid 3px $darker-green;
+}
+
 .navbar-default{
 	@include wide-screens {
 		background-color: transparent;
@@ -263,7 +267,6 @@ footer{
 	text-align: center;
 	font-size: 13px;
 	padding: 20px 0px;
-	border-bottom: 10px solid #333;
 
 	ul{
 		display: block;
@@ -305,7 +308,7 @@ footer{
 		@include wide-screens {				
 			// width: auto;
 		}
-		
+
 		.close{
 			font-size: 30px;
 			display: inline-block;

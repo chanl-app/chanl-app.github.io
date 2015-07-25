@@ -41,7 +41,7 @@ $break-large: 1024px;
 // }
 
 body, html {
-	height: 100%;
+	min-height: 100%;
 	margin: 0px;
 	padding: 0px;
 	font-size: 11px;
