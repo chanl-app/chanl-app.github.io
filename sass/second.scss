@@ -305,11 +305,12 @@ footer{
 		@include wide-screens {				
 			// width: auto;
 		}
-		// .close{
-		// 	font-size: 30px;
-		// 	display: inline-block;
-		// 	padding: 6px 14px 0px;
-		// }
+		
+		.close{
+			font-size: 30px;
+			display: inline-block;
+			  padding-right: 5px;
+		}
 	}
 	
 	.modal-content{
