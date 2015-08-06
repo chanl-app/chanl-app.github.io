@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>chanl</title>
+
+	<link rel="stylesheet" type='text/css' href="stylesheets/styles.css">
+	<link rel="stylesheet" type='text/css' href="stylesheets/second.css">
+	<link rel="stylesheet" type='text/css' href="stylesheets/lib/animate.min.css">
+	<!-- <link rel="stylesheet" href="stylesheets/main.css"> -->
+</head>
+<body>
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand title" href="#"><img src="images/fresh_new_logo.png" alt=""><span>Chanl</span></a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="http://blog.chanlapp.com/">Blog</a></li>
+					<li><a href="mailto:info@chanlapp.com">Contact</a></li>
+					<li><a href="https://twitter.com/ChanlApp" target="blank">Twitter</a></li>
+					<li><a href="http://blog.chanlapp.com/chanl/2015/07/27/welcome-to-chanl.html" target="blank">About</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+	<header>
+		<div class="holder">
+			<div>
+				<div class="img-animate animated fadeInDown">
+					<img src="images/fresh_new_logo.png" alt="" class="img">
+				</div>
+				<!-- <img src="images/chanlv2.png" alt="" class="img fadeInDown"> -->
+				<!-- <img src="images/new_chanl_logo.png"> -->
+				<!-- <img src="images/new_logo_shadow.png"> -->
+				<div><h1 class="title animated fadeInRight">chanl</h1></div>
+				<div class="flipper animated flipInX">
+					<h3 class="sub-title">
+						Communication for Communities
+						<!-- <div style="display: inline-block;">&nbsp;&nbsp;<span class='what-elementj' style="font-weight: 400;"></span></div> -->
+
+					</h3>
+				</div>
+			</div>
+			<div class="call-to-action">
+				<button class="btn" id="notifyMe">Notify me on launch</button>
+				<div class="stores">
+					<p>Coming Soon on <b>Play Store</b> &amp; <b>App Store</b></p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<footer>
+		<div class="container">
+			<div class="section">
+				<ul>
+					<!-- <li><a href="">Overview and FAQ</a></li>
+					<li><a href=""></a></li>
+					<li><a href="">Terms and conditions</a></li>
+					<li><a href="">Privacy and Conditions</a></li> -->
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</footer>
+	<!-- Button trigger modal --><!-- 
+	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+		Launch demo modal
+	</button> -->
+
+	<script type="text/javascript">
+		var submitted=false;
+		var thanYouModal = function(){
+			if (submitted){
+				$('#notifyMeModal').modal("toggle");
+				$('#thankYouModal').modal("toggle");
+
+				$("#notifyForm")[0].reset(); // reset inputs
+			}
+		}
+	</script>
+	<!-- Modals -->
+	<!-- Notify me modal -->
+	<div class="modal fade notifyMeModal" id="notifyMeModal" tabindex="-1" role="dialog" aria-labelledby="notifyMeModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>				
+			</div>
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="info">
+						<div>
+							We building an awesome product just for you.
+						</div>
+						<div class="top">
+							Be Part of our Private Beta
+						</div>
+					</div>
+					<!-- 
+					 
+				-->
+				<iframe name="hidden_iframe" id="hidden_iframe"	style="display:none;" onload="thanYouModal()"></iframe>
+				<form action="https://docs.google.com/forms/d/1FDCS0ZdPyydWNlYaL95hGEkS_9AWxJdJ4muoaR1Y7uU/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;" id="notifyForm">
+					<div>
+
+						<div>
+							<div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+								<input type="email" name="entry.1361909972" value="" class="form-control" id="entry_1361909972" dir="auto" aria-label="Email  Must be a valid email address" aria-required="true" required="" title="Must be a valid email address" placeholder="Leave us your email">
+
+										<!-- <div class="error-message" id="581059875_errorMessage">Must be a valid email address</div>
+										<div class="required-message">This is a required question</div> -->
+									</div>
+								</div>
+							</div> 
+							<div class="or">or</div>
+							<div>
+								<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+
+									<input type="text" name="entry.1969853625" value="" class="form-control" id="entry_1969853625" dir="auto" aria-label="Phone number  Must contain " pattern=".*.*" title="Must contain " placeholder="+1-20-624-2008">
+
+										<!-- <div class="error-message" id="1130416811_errorMessage">Must contain </div>
+										<div class="required-message">This is a required question</div> -->
+									</div>
+								</div>
+							</div>
+							<p style="font-size: 12px; text-align: center; font-weight: 500;">
+								We'll send an sms notification so you can be the first on chanl.
+							</p>
+
+							<input type="hidden" name="draftResponse" value="[,,&quot;4377805801153691101&quot;]
+							">
+							<input type="hidden" name="pageHistory" value="0">
+
+
+							<input type="hidden" name="fbzx" value="4377805801153691101">
+						</div>
+						<div class="ss-item ss-navigate">
+							<input type="submit" name="submit" value="Join Now" id="ss-submit" class="btn">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /notify me modal -->
+	<!-- Thank you modal -->
+	<div class="modal fade" id="thankYouModal" tabindex="-1" role="dialog" aria-labelledby="notifyMeModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>				
+			</div>
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="info">
+						<div class="top">
+							Get Notified on Launch day
+						</div>
+						<div>
+							We building an awesome product just for you. 
+						</div>
+					</div>
+					<div class="thankYouNotification">
+						<h1>Thank you for signing up.</h1>
+						<h2>In the meantime, catch us on social media</h2>
+						<div class="social">
+							<!-- <i>facebook</i> -->
+							<a href="https://twitter.com/share" class="twitter-share-button" data-text="Just signed up on Chanl: a communication tool used by individuals to get  information to others." data-via="ChanlApp" data-size="large" data-count="none">Tweet</a>
+							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+							<a href="https://twitter.com/ChanlApp" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @ChanlApp</a>
+							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /than you modal -->
+	<!-- /modals -->
+	<!-- <section class="copyright">
+		Copyright &copy; 2015. All rights reserved. chanlapp.com
+	</section>-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="/javascripts/bootstrap.min.js"></script>
+	<script src="/javascripts/bootstrap/modal.js"></script>
+	<script type="text/javascript" src="javascripts/lib/typed.min.js"></script>
+	<script>
+		$(function(){
+			$("#notifyMe").on('click',function(){
+				$("#notifyMeModal").modal();
+			});
+		});
+
+		$(function(){
+			$(".what-element").typed({
+				strings: ["Follow", "Share", "Capture"],
+				typeSpeed: 200,
+				loop: true,
+				showCursor: false,
+				backDelay: 2500,
+				contentType: 'html'
+			});
+		});
+	</script>
+</body>
+</html>
