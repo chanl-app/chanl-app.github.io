@@ -259,6 +259,33 @@ header{
 	}
 }
 
+.privacy_tc{
+	background: none;
+	h1{
+		text-align: center;
+    margin: 0 0 10px;
+    font-size: 30px;
+	}	
+
+	h2{
+		font-size: 20px;
+	}
+
+	h3{
+		font-size: 16px;
+    margin: 0 0 15px;
+    text-align: center;
+	}
+	p{
+		font-size: 15px;
+		margin: 0 0 20px;
+	}
+
+	footer{
+		position: static !important;
+	}
+}
+
 footer{
 	position: absolute;
 	bottom: 0;
@@ -312,7 +339,7 @@ footer{
 		.close{
 			font-size: 30px;
 			display: inline-block;
-			  padding-right: 5px;
+			padding-right: 5px;
 		}
 	}
 	
