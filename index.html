@@ -30,10 +30,12 @@
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="http://blog.chanlapp.com/" target="blank">Blog</a></li>
+					<!-- <li><a href="http://blog.chanlapp.com/" target="blank">Blog</a></li> -->
+					<li><a href="https://medium.com/the-chanl" target="blank">Blog</a></li>
 					<li><a href="mailto:info@chanlapp.com">Contact</a></li>
 					<li><a href="https://twitter.com/ChanlApp" target="blank">Twitter</a></li>
-					<li><a href="http://blog.chanlapp.com/chanl/2015/07/27/welcome-to-chanl.html" target="blank">About</a></li>
+					<!-- <li><a href="http://blog.chanlapp.com/chanl/2015/07/27/welcome-to-chanl.html" target="blank">About</a></li> -->
+					<li><a href="https://medium.com/the-chanl/about-chanl-4e890dd3b040#.xkpiiuszf" target="blank">About</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div>
@@ -57,9 +59,11 @@
 				</div>
 			</div>
 			<div class="call-to-action">
-				<button class="btn" id="notifyMe">Notify me on launch</button>
+				<button class="btn" id="notifyMe">Join us in Beta</button>
+				<!-- <a class="btn btn-primary btn-lg" href="http://j.mp/chanl">Join us in Beta</a> -->
 				<div class="stores">
-					<p>Coming Soon on <b>Play Store</b> &amp; <b>App Store</b></p>
+					<!-- <p>Coming Soon on <b>Play Store</b> &amp; <b>App Store</b></p> -->
+					<p>Coming Soon on <b>App Store</b></p>
 				</div>
 			</div>
 		</div>
@@ -201,7 +205,8 @@
 	<script>
 		$(function(){
 			$("#notifyMe").on('click',function(){
-				$("#notifyMeModal").modal();
+        window.location = 'http://j.mp/chanl'
+				//$("#notifyMeModal").modal();
 			});
 		});
 
